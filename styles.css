@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600,700);
+.dad {
+    background: url("imgs/large/10-Great-Russian-Restaurants-in-St-Petersburg-Sadko.jpg");
+    background-size: cover;
+}
+
+.img-responsive {
+    height: 200px;
+    width: 200px;
+}
+
+.grow {
+    padding: 5px 5px 5px 5px;
+    height: 100vh;
+    width: 20vh;
+    float: left;
+    position: relative;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    text-align: left;
+    overflow: hidden;
+}
+
+.grow:hover {
+    height: 100vh;
+    width: 50vh;
+    text-align: left;
+}
+
+.tab-title {
+    font-size: 2.5em;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.panel-heading {
+    background-color: #baa3a3 !important;
+}
+
+.vertical-tab-1 {
+    background: url("imgs/large/russisktapas.jpg") center center no-repeat;
+}
+
+.vertical-tab-2 {
+    background: url("imgs/large/moldaviskfiskesuppe.jpg") center center;
+}
+
+.vertical-tab-3 {
+    background: url("imgs/large/mos-rogn.jpg") center center;
+}
+
+.vertical-tab-4 {
+    background: url("imgs/large/dynryp.jpg") center center;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    margin-top: 50vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2.25em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 970px) {
+    .rotate {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .tab-title {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rotate {
+        font-size: 1.125em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tab-title {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rotate {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tab-title {
+        font-size: 0.75em;
+    }
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+#myCarousel .nav a small {
+    display: block;
+}
+
+#myCarousel .nav {
+    background: #eee;
+}
+
+#myCarousel .nav a {
+    border-radius: 0px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rosybrown;
+}
+
+#header {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav ul li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+header nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+item1 {
+    background-image: url(imgs/large/bondeplatte.jpg);
+    height: 400px;
+    width: 1200;
+}

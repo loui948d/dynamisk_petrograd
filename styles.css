@@ -1,3 +1,7 @@
+.udsolgt {
+    text-decoration: line-through;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600,700);
 .dad {
     background: url("imgs/large/10-Great-Russian-Restaurants-in-St-Petersburg-Sadko.jpg");

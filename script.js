@@ -28,8 +28,18 @@ function visProdukt(produkt) {
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
 
     // man tilføjer billeder via json med en attributen 'src'
-
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+
+    // fjern teksten at produktet er udsolgt på de varer som ikke er udsolgt, og kun vises på dem som er udsolgt
+    if (produkt.udsolgt == false) {
+        //produktet er ikke udsolgt
+        //udsolgttekst fjernes - dette gøres ved at man beder 'forældrene' om at fjerne deres 'barn'
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+        // når en varer er udsolgt, skal prisen streges over
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
 
     // append klon til .produkt-liste
     document.querySelector(".produktliste").appendChild(klon);

@@ -41,6 +41,14 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("udsolgt");
     }
 
+    // det samme skal gøres ved rabatprisen, hvis en vare ikke har rabat skal prisen ikke vises, || = eller
+    if (produkt.udsolgt == true || produkt.rabatsats == 0) {
+        var rabatpris = klon.querySelector(".rabatpris");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
+    }
+
     // append klon til .produkt-liste
     document.querySelector(".produktliste").appendChild(klon);
 }

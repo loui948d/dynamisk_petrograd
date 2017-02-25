@@ -79,7 +79,13 @@
     </div>
     <br>
 
-    <div class="row produktliste">
+    <!-- Forretter overskrift -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Forretter</h1></div>
+    </div>
+
+    <div class="row forretter">
         <!-- her skal produkter ligges ind i row'en-->
 
         <!-- Forret 1 -->
@@ -94,14 +100,57 @@
                 <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
                 <!-- Skal kun vises hvis udsolgt -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalforret1">Se detaljer<span class="glyphicon glyphicon-chevron-right"></span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </template>
     </div>
 
+    <!-- Hovedretter overskrift -->
+    <div class="row hovedretter">
+        <div class="col-lg-12">
+            <h1 class="page-header">Hovedretter</h1></div>
+    </div>
 
+    <!-- Desserter overskrift -->
+    <div class="row desserter">
+        <div class="col-lg-12">
+            <h1 class="page-header">Desserter</h1></div>
+    </div>
 
+    <!-- Sideorder overskrift -->
+    <div class="row sideorders">
+        <div class="col-lg-12">
+            <h1 class="page-header">Side Orders</h1></div>
+    </div>
 
-
+    <!-- Drikkevarer overskrift -->
+    <div class="row drikkevarer">
+        <div class="col-lg-12">
+            <h1 class="page-header">Drikkevarer</h1></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

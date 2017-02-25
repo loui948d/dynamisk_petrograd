@@ -23,6 +23,7 @@ function visProdukt(produkt) {
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
     klon.querySelector(".data_pris").innerHTML = produkt.pris;
 
+
     //rabatprisen udregnes - Math.ceil sætter du rundt om hele beregningen for at runde tallene op til hele tal
     var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
@@ -49,6 +50,8 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
-    // append klon til .produkt-liste
-    document.querySelector(".produktliste").appendChild(klon);
+    // append klon til kategorierne - så retterne kommer ind i de rigtige kategorier - punktummet er hvor den tager de forskellige classes såsom hovedretter, så når den ser i listen at en ret af kategorien .hovedretter så ved den det automatisk at den skal ind under hovedretter
+
+    console.log("." + produkt.kategori)
+    document.querySelector("." + produkt.kategori).appendChild(klon);
 }
